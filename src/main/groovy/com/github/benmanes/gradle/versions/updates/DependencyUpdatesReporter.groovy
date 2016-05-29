@@ -64,7 +64,7 @@ class DependencyUpdatesReporter {
     synchronized (MUTEX) {
       PlainTextReporter plainTextReporter = new PlainTextReporter(project, revision)
 
-      plainTextReporter.write(System.out, buildBaseObject())
+//      plainTextReporter.write(System.out, buildBaseObject())
 
       if (outputFormatter == null || (outputFormatter instanceof String && outputFormatter.isEmpty())) {
         project.logger.lifecycle('Skip generating report to file (outputFormatter is empty)')
