@@ -37,7 +37,7 @@ class PlainTextReporter extends AbstractReporter {
     if (result.count == 0) {
       printStream.println '\nNo dependencies found.'
     } else {
-      writeUpToDate(printStream, result)
+      // writeUpToDate(printStream, result)
       writeExceedLatestFound(printStream, result)
       writeUpgrades(printStream, result)
       writeUnresolved(printStream, result)
